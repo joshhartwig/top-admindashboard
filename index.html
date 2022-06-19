@@ -1,197 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
     <title>Admin Page</title>
 </head>
-
 <body>
-    <div class="container">
-
-        <!-- Sidebar Begin -->
-        <div class="sidebar">
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div class="menu-item">
+            <h2>Dashboard</h2>
         </div>
-        <!-- Sidbar End -->
+        <div class="menu-item">
+            <h2>Home</h2>
+        </div>
+        <div class="menu-item">
+            <h2>Profile</h2>
+        </div>
+        <div class="menu-item">
+            <h2>Messages</h2>
+        </div>
+        <div class="menu-item">
+            <h2>History</h2>
+        </div>
+        <div class="menu-item">
+            <h2>Tasks</h2>
+        </div>
+        <div class="menu-item">
+            <h2>Communities</h2>
+        </div>
+        <div class="menu-item">
+            <h2>Settings</h2>
+        </div>
+        <div class="menu-item">
+            <h2>Support</h2>
+        </div>
+        <div class="menu-item">
+            <h2>Privacy</h2>
+        </div>
+    </div>
 
-        <!-- Main begin -->
-        <div class="main">
+    <!-- nav -->
+    <div class="nav">
+        <div class="nav-search">
+            <input type="search" class="searchbar">
+        </div>
+        <div class="nav-greeting">
+            <img src="https://github.com/joshhartwig.png" alt="" class="ghub-avatar-medium">
+            <h5>Hi there,</h5>
+            <p class="nav-greeting-name">Josh Hartwig <span class="name">@joshhartwig</span></p>
+        </div>
+        <div class="nav-social">
+            <img src="https://github.com/joshhartwig.png" alt="" class="ghub-avatar-small">
+            <p class="nav-social-name">Josh Hartwig</p>
+        </div>
+        <div class="nav-buttons">
+            <button class="btn">New</button>
+            <button class="btn">Upload</button>
+            <button class="btn">Share</button>
+        </div>
+        
+    </div>
 
-            <!-- Admin Panel Begin -->
-            <div class="admin-panel">
-                <div class="admin-search">
-                    <input type="text" class="admin-searchbar" placeholder="Search..">
+    <!-- main -->
+    <div class="main">
+        <h2>Your Projects</h2>
+        <div class="main-cards">
+
+            <!-- cards -->
+            <div class="card card-1">
+                <div class="card-title">
+                    <h2>Super Cool Project</h2>
                 </div>
-                <div class="admin-profile">
-                    <div class="admin-profile-image-container">
-                        <img src="/img/model.png">
-                    </div>
-                    <div class="admin-profile-text">
-                        <p class="admin-profile-hello">Hi there,</p>
-                        <p class="admin-profile-person">@MariaR</p>
-                    </div>
+                <div class="card-text">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit assumenda, perferendis numquam voluptates illum, animi minus quod repudiandae optio magni, excepturi recusandae illo esse cupiditate ratione accusantium et itaque ducimus.</p>
                 </div>
-                <div class="admin-authenticated">
-                    <div class="auth-ico">ico</div>
-                    <div class="auth-pro-img">
-                        <img src="/img/model.png" class="model-profile-small">
-                    </div>
-                    <div class="auto-name">Maria Randomname</div>
-                </div>
-                <div class="admin-controls">
-                    <button class="button btn-new-post">New Post</button>
-                    <button class="button btn-delete">Delete Post</button>
+                <div class="card-actions">
+                    XXX
                 </div>
             </div>
 
-            <div class="other-traffic">
-                <p class="other-traffic-header">Recent Traffic</p>
-                <div class="other-traffic-image">
-                    <img src="https://ahrefs.com/blog/wp-content/uploads/2021/05/Overview_dodoburd_com_on_Ahrefs.jpg"
-                        class="traffic-image">
+            <div class="card card-2">
+                <div class="card-title">
+                    <h2>Less Cool Project</h2>
+                </div>
+                <div class="card-text">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit assumenda, perferendis numquam voluptates illum, animi minus quod repudiandae optio magni, excepturi recusandae illo esse cupiditate ratione accusantium et itaque ducimus.</p>
+                </div>
+                <div class="card-actions">
+                    XXX
                 </div>
             </div>
 
-            <div class="other-title">
-                <p class="other-title-header">Recent Posts</p>
+            <div class="card card-3">
+                <div class="card-title">
+                    <h2>Impossible App</h2>
+                </div>
+                <div class="card-text">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit assumenda, perferendis numquam voluptates illum, animi minus quod repudiandae optio magni, excepturi recusandae illo esse cupiditate ratione accusantium et itaque ducimus.</p>
+                </div>
+                <div class="card-actions">
+                    XXX
+                </div>
             </div>
-            <!-- Other Begin -->
-            <div class="other">
-                <div class="card card1">
-                    <div class="card-accent"></div>
-                    <div class="card-title">
-                        <p class="card-element">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-                    </div>
-                    <div class="card-content">
-                        <p class="card-element">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Arcu dictum varius duis at consectetur.
-                            Quis vel eros donec ac odio tempor<span class="drifting">.....</span></p>
-                    </div>
-                    <div class="card-utils">
-                        <span class="icon-1">I</span>
-                        <span class="icon-1">I</span>
-                        <span class="icon-1">I</span>
-                    </div>
-                </div>
-                <div class="card card2">
-                    <div class="card-accent"></div>
-                    <div class="card-title">
-                        <p class="card-element">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-                    </div>
-                    <div class="card-content">
-                        <p class="card-element">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Arcu dictum varius duis at consectetur.
-                            Quis vel eros donec ac odio tempor<span class="drifting">.....</span></p>
-                    </div>
-                    <div class="card-utils">
-                        <span class="icon-1">I</span>
-                        <span class="icon-1">I</span>
-                        <span class="icon-1">I</span>
-                    </div>
-                </div>
-                <div class="card card3">
-                    <div class="card-accent"></div>
-                    <div class="card-title">
-                        <p class="card-element">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-                    </div>
-                    <div class="card-content">
-                        <p class="card-element">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Arcu dictum varius duis at consectetur.
-                            Quis vel eros donec ac odio tempor<span class="drifting">.....</span></p>
-                    </div>
-                    <div class="card-utils">
-                        <span class="icon-1">I</span>
-                        <span class="icon-1">I</span>
-                        <span class="icon-1">I</span>
-                    </div>
-                </div>
-                <div class="card card4">
-                    <div class="card-accent"></div>
-                    <div class="card-title">
-                        <p class="card-element">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-                    </div>
-                    <div class="card-content">
-                        <p class="card-element">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Arcu dictum varius duis at consectetur.
-                            Quis vel eros donec ac odio tempor<span class="drifting">.....</span></p>
-                    </div>
-                    <div class="card-utils">
-                        <span class="icon-1">I</span>
-                        <span class="icon-1">I</span>
-                        <span class="icon-1">I</span>
-                    </div>
-                </div>
 
-                <div class="card card5">
-                    <div class="card-accent"></div>
-                    <div class="card-title">
-                        <p class="card-element">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-                    </div>
-                    <div class="card-content">
-                        <p class="card-element">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Arcu dictum varius duis at consectetur.
-                            Quis vel eros donec ac odio tempor<span class="drifting">.....</span></p>
-                    </div>
-                    <div class="card-utils">
-                        <span class="icon-1">I</span>
-                        <span class="icon-1">I</span>
-                        <span class="icon-1">I</span>
-                    </div>
+            <div class="card card-4">
+                <div class="card-title">
+                    <h2>Easy Peasy App</h2>
                 </div>
-
-                <div class="card card6">
-                    <div class="card-accent"></div>
-                    <div class="card-title">
-                        <p class="card-element">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-                    </div>
-                    <div class="card-content">
-                        <p class="card-element">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Arcu dictum varius duis at consectetur.
-                            Quis vel eros donec ac odio tempor<span class="drifting">.....</span></p>
-                    </div>
-                    <div class="card-utils">
-                        <span class="icon-1">I</span>
-                        <span class="icon-1">I</span>
-                        <span class="icon-1">I</span>
-                    </div>
+                <div class="card-text">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit assumenda, perferendis numquam voluptates illum, animi minus quod repudiandae optio magni, excepturi recusandae illo esse cupiditate ratione accusantium et itaque ducimus.</p>
                 </div>
-                <div class="right-sidebar">
-                    <div class="racard">
-                        <div class="racard-title">
-                            <p class="racard-element">Recent Activity</p>
-                        </div>
-                        <div class="racard-content">
-                            <p class="racard-element">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu dictum varius duis at
-                                consectetur. Quis vel eros donec ac odio tempor<span class="radrifting">.....</span></p>
-                        </div>
-
-                        <div class="racard-title">
-                            <p class="racard-element">Site Maintenance</p>
-                        </div>
-                        <div class="racard-content">
-                            <p class="racard-element">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor<span class="radrifting">.....</span></p>
-
-                            <div class="racard-title">
-                                <p class="racard-element">Privacy Policy</p>
-                            </div>
-                            <div class="racard-content">
-                                <p class="racard-element">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sit amet
-                                    consectetur adipiscing elit pellentesque. Neque aliquam vestibulum morbi blandit
-                                    cursus risus.<span class="radrifting">.....</span></p>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="card-actions">
+                    XXX
                 </div>
+            </div>
 
+            <div class="card card-5">
+                <div class="card-title">
+                    <h2>Ad Blocker</h2>
+                </div>
+                <div class="card-text">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit assumenda, perferendis numquam voluptates illum, animi minus quod repudiandae optio magni, excepturi recusandae illo esse cupiditate ratione accusantium et itaque ducimus.</p>
+                </div>
+                <div class="card-actions">
+                    XXX
+                </div>
+            </div>
+
+            <div class="card card-6">
+                <div class="card-title">
+                    <h2>Money Maker</h2>
+                </div>
+                <div class="card-text">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit assumenda, perferendis numquam voluptates illum, animi minus quod repudiandae optio magni, excepturi recusandae illo esse cupiditate ratione accusantium et itaque ducimus.</p>
+                </div>
+                <div class="card-actions">
+                    XXX
+                </div>
             </div>
         </div>
+    </div>
+
+    <!-- announcements -->
+    <div class="announce"></div>
+    
 </body>
-
 </html>

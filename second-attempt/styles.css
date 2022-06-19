@@ -1,0 +1,57 @@
+:root{
+    font-size: 16px;
+    font-family:'Ubuntu', sans-serif;
+    --text-primary: black;
+    --text-secondary: white;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --sidebar-color: #0ea5e9;
+    --sidebar-width: clamp(210px,22vw,325px);
+    --nav-bg-1: #f8f8f8;
+    --nav-color-1: #c9c9c9;
+    --nav-color-2: #62daff6e;
+    --blue-1: #084c61;
+    --avatar-1: url('https://github.com/joshhartwig.png');
+    --avavtar-2: url('https://github.com/amy.png');
+    --avatar-3: url('https://github.com/bob.png');
+    --content-gray: rgb(235,235,235);
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display:grid;
+    grid-template-areas:
+    "sidebar nav nav nav"
+    "sidebar content content content";
+    grid-template-rows: 0.8fr 4fr;
+    grid-template-columns: 5rem 1fr 1fr 1fr;
+
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: var(--sidebar-color);
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+}
+
+.navbar {
+    grid-area: nav;
+}
+
+.menuitem {
+    color: var(--text-secondary);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+.content {
+    grid-area: content;
+}

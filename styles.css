@@ -1,186 +1,110 @@
-/*https://colorhunt.co/palette/cdf0eaf9f9f9f6c6eafaf4b7*/
-
-body {
-  margin: 0px;
+:root {
+    font-size: 16px;
+    --sidebar-bgcolor: blue;
+    --sidebar-txtcolor: white;
+    --navbar-bgcolor: grey;
+    --main-bgcolor: yellow;
+    --announce-bgcolor: red;
 }
 
-.container {
-  display: flex;
+body {
+    display: grid;
+    grid-template-areas: 
+    "sidebar nav nav nav"
+    "sidebar main main announce"
+    "sidebar main main announce"
+    "sidebar main main announce";
+    grid-template-columns: .5fr 1fr 1fr .6fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .sidebar {
-  width: 10%;
-  height: 100vh;
-  background-color: #F6C6EA;
+    grid-area: sidebar;
+    background-color: var(--sidebar-bgcolor);
+    height: 100vh;
+}
 
+.nav {
+    grid-area: nav;
+    display: grid;
+    background-color: var(--navbar-bgcolor);
+    grid-template-areas:
+    "navsearch navsocial"
+    "navgreeting navbuttons";
+    grid-template-columns: 1fr 1fr;
+    /*grid-template-rows: 1fr 1fr;*/
+    grid-auto-rows:min-content;
+}
+
+.nav-search {
+    grid-area: navsearch;
+}
+
+.nav-greeting {
+    grid-area: navgreeting;
+}
+
+.nav-social {
+    grid-area: navsocial;
+}
+
+.nav-buttons {
+    grid-area: navbuttons;
 }
 
 .main {
-  width: 100%;
-  height: 100vh;
+    grid-area: main;
+    background-color: var(--main-bgcolor);
 }
 
-.admin {
-  height: 20%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.main-cards {
+    display:grid;
+    grid-template-areas: 
+    "card-1 card-2"
+    "card-3 card-4"
+    "card-5 card-6";
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: min-content;
 }
 
-.admin-panel {
-  padding: 1em 15em .5em 1em;
-  background-color: #CDF0EA;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
-  justify-content: space-between;
-  align-items: center;
+.card-1 {
+    grid-area: card-1;
 }
 
-.admin-searchbar {
-  width: 50%;
-  border-radius: 25px;
-  border: none;
+.card-2 {
+    grid-area: card-2;
 }
 
-.admin-profile {
-  display: flex;
-  grid-gap: 0px;
-  grid-column: 1;
-  grid-row: 2;
+.card-3 {
+    grid-area: card-3;
 }
 
-.admin-profile-image-container img {
-  width: 80%;
-  height: auto;
-  display: inline;
+.card-4 {
+    grid-area: card-4;
 }
 
-.profile-image {
-  margin: 0;
+.card-5 {
+    grid-area: card-5;
 }
 
-.model-profile-small {
-  height: 40%;
-  width: auto;
+.card-6 {
+    grid-area: card-6;
 }
 
-.admin-authenticated {
-  display: flex;
-  grid-column: 2;
+
+
+
+.announce {
+    grid-area: announce;
+    background-color: var(--announce-bgcolor);
 }
 
-.admin-controls {
-  grid-column: 2;
-  grid-row: 2;
+.ghub-avatar-small {
+    width: 10%;
+    height: auto;
 }
 
-.button {
-  background-color: #F6C6EA;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-}
-
-.other {
-  background-color: #F9F9F9;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
-  grid-auto-rows: 15em;
-  grid-auto-flow: row;
-  padding: 1em 40em .5em 1em;
-}
-
-.other-traffic {
-  padding: 1em 15em .5em 1em;
-}
-
-.other-title {
-  padding: 1em 15em .5em 1em;
-}
-
-.traffic-image {
-  width: 40%;
-  display: block;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.card {
-  width: 80%;
-  height: 70%;
-  border-radius: 25px;
-  background-color: #F9F9F9;
-  padding: 1% 1% 1% 1%;
-  box-shadow: 2px 4px #CDF0EA;
-  display: grid;
-  grid-template-columns: .25fr 2fr 2fr 2fr;
-  grid-gap: 2%;
-}
-
-.card-title {
-  font-weight: bold;
-  grid-column: 2 / -1;
-}
-
-.card-content {
-  grid-column: 2/ -1;
-}
-
-.card-utils {
-  grid-column: 4 / -1;
-}
-
-.card-accent {
-  background-color: #F6C6EA;
-  border-radius: 5px;
-  grid-column: 1;
-  grid-row: 1 / 3;
-  margin: 0em .5em 0em 0em;
-}
-
-.card-element {
-  display: inline;
-}
-
-.card4 {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.card5 {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.card6 {
-  grid-column: 3;
-  grid-row: 2;
-}
-
-.right-sidebar {
-  grid-column: 4;
-  /*grid-row: 1 / -1;*/
-  background-color: #F9F9F9;
-}
-
-.racard {
-  width: 50%;
-  /*height: 100%;*/
-  border-radius: 25px;
-  background-color: #F9F9F9;
-  padding: 1% 1% 1% 1%;
-  box-shadow: 2px 4px #CDF0EA;
-  text-align: center;
-}
-
-.racard-title {
-  font-weight: bold;
+.ghub-avatar-medium {
+    width: 20%;
+    height: auto;
 }
