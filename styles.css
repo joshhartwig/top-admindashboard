@@ -1,10 +1,14 @@
+/* ---- general --------- */
+
 :root {
     font-size: 16px;
-    --sidebar-bgcolor: blue;
+    font-family: 'Ubuntu', sans-serif;;
+    --sidebar-bgcolor: white;
     --sidebar-txtcolor: white;
-    --navbar-bgcolor: grey;
-    --main-bgcolor: yellow;
-    --announce-bgcolor: red;
+    --navbar-bgcolor: white;
+    --main-bgcolor: white;
+    --announce-bgcolor: white;
+    --button-bgcolor: white;
 }
 
 body {
@@ -13,16 +17,37 @@ body {
     "sidebar nav nav nav"
     "sidebar main main announce"
     "sidebar main main announce"
-    "sidebar main main announce";
-    grid-template-columns: .5fr 1fr 1fr .6fr;
+    "sidebar main main trend";
+    grid-template-columns: .4fr 1fr 1fr .6fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
+
+.important {
+    font-weight: 700;
+}
+
+/* ---- sidebar --------- */
 
 .sidebar {
     grid-area: sidebar;
     background-color: var(--sidebar-bgcolor);
     height: 100vh;
+    padding: 10px 0px 0px 10px;
 }
+
+.menu-item {
+    display: flex;
+    padding: 1em 0em 0em 1em;
+}
+
+.menu-image {
+    margin: 0px 10px 0px 0px;
+}
+
+
+
+
+/* ---- navbar --------- */
 
 .nav {
     grid-area: nav;
@@ -32,25 +57,85 @@ body {
     "navsearch navsocial"
     "navgreeting navbuttons";
     grid-template-columns: 1fr 1fr;
-    /*grid-template-rows: 1fr 1fr;*/
     grid-auto-rows:min-content;
+    padding: 1em 0em 1em 1em;
 }
 
 .nav-search {
+    display: flex;
     grid-area: navsearch;
+    align-items: center;
+}
+
+.searchbar {
+    width: 50%;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+
+.btn {
+    background-color: var(--button-bgcolor);
+    border: none solid black;
+    border-radius: 5px;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; 
+    margin: 10px 2px;
 }
 
 .nav-greeting {
+    display: flex;
+    align-items: center;
     grid-area: navgreeting;
+    padding: 2em 0em 0em 0em;
+}
+
+.nav-greeting-text-container {
+    padding: 0em 0em 0em 1em;
+}
+
+.nav-search-image {
+    padding: 0em .5em 0em 0em;
 }
 
 .nav-social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     grid-area: navsocial;
+    padding: 0em 2em 0em 0em;
+}
+
+.nav-social-name {
+    margin: 0px 0px 0px 10px;
+}
+
+.social-alert-small {
+    margin: 0px 10px 0px 0px;
 }
 
 .nav-buttons {
     grid-area: navbuttons;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 0em 2em 0em 0em;
 }
+
+.ghub-avatar-small {
+    width: 5%;
+    height: auto;
+}
+
+.ghub-avatar-medium {
+    width: 15%;
+    height: auto;
+}
+
+
+/* ---- main --------- */
 
 .main {
     grid-area: main;
@@ -59,12 +144,22 @@ body {
 
 .main-cards {
     display:grid;
+    grid-gap: .55em;
     grid-template-areas: 
     "card-1 card-2"
     "card-3 card-4"
     "card-5 card-6";
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: min-content;
+    margin: 10px 10px 0px 0px;
+    
+}
+
+.card {
+    border: 1px solid black;
+    box-shadow: 2px 4px #CDF0EA;
+    border-radius: 25px; 
+    padding: 1em 1em 1em 1em;
 }
 
 .card-1 {
@@ -91,20 +186,37 @@ body {
     grid-area: card-6;
 }
 
+.card-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-img {
+    width: 1.5em;
+    height: auto;
+    padding: .5em .5em 0em 0em;
+}
 
 
+/* ---- announcements --------- */
 
 .announce {
     grid-area: announce;
     background-color: var(--announce-bgcolor);
 }
 
-.ghub-avatar-small {
-    width: 10%;
-    height: auto;
+.announce-card {
+    margin: 10px 4em 10px 0px;
 }
 
-.ghub-avatar-medium {
-    width: 20%;
-    height: auto;
+
+
+/* ---- trending --------- */
+
+.trending {
+    grid-area: trend;
+}
+
+.trending-card {
+    margin: 10px 4em 0px 0px;
 }
