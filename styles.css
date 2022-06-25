@@ -1,14 +1,17 @@
 /* ---- general --------- */
+/*https://tailwindcss.com/docs/customizing-colors slate color palette*/
 
 :root {
     font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;;
-    --sidebar-bgcolor: white;
-    --sidebar-txtcolor: white;
-    --navbar-bgcolor: white;
-    --main-bgcolor: white;
-    --announce-bgcolor: white;
-    --button-bgcolor: white;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #e2e8f0;      /* 200 */
+    --sidebar-bgcolor: #475569;     /* 600 */
+    --sidebar-txtcolor: #f8fafc;    /* 50 */
+    --navbar-bgcolor: #e2e8f0;      /* 200 */
+    --main-bgcolor: #cbd5e1;        /* 300 */
+    --announce-bgcolor: #cbd5e1;    /* 300 */
+    --card-bgcolor: #f1f5f9;        /* 100 */
+    --button-bgcolor: #f1f5f9;      /* 100 */
 }
 
 body {
@@ -20,7 +23,7 @@ body {
     "sidebar main main announce"
     "sidebar main main announce";
     grid-template-columns: .4fr 1fr 1fr .6fr;
-    grid-template-rows: 20% 25% 25% 25%;
+    grid-template-rows: 18% 25% 25% 25%;
 }
 
 .important {
@@ -43,6 +46,10 @@ body {
 
 .menu-image {
     margin: 0px 10px 0px 0px;
+}
+
+.menu-text {
+    color: var(--sidebar-txtcolor)
 }
 
 
@@ -141,6 +148,8 @@ body {
 .main {
     grid-area: main;
     background-color: var(--main-bgcolor);
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .main-cards {
@@ -157,10 +166,11 @@ body {
 }
 
 .card {
-    border: 1px solid black;
-    box-shadow: 2px 4px #CDF0EA;
+    border: 1px solid #475569;
+    box-shadow: 2px 4px #475569;
     border-radius: 25px; 
     padding: 1em 1em 1em 1em;
+    background-color: var(--card-bgcolor);
 }
 
 .card-1 {
@@ -204,6 +214,7 @@ body {
 .announce {
     grid-area: announce;
     background-color: var(--announce-bgcolor);
+    margin-top: 10px;
 }
 
 .announce-card {
