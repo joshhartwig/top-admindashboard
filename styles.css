@@ -18,9 +18,9 @@ body {
     "sidebar nav nav nav"
     "sidebar main main announce"
     "sidebar main main announce"
-    "sidebar main main trend";
+    "sidebar main main announce";
     grid-template-columns: .4fr 1fr 1fr .6fr;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-rows: 20% 25% 25% 25%;
 }
 
 .important {
@@ -210,14 +210,6 @@ body {
     margin: 10px 4em 10px 0px;
 }
 
-
-
-/* ---- trending --------- */
-
-.trending {
-    grid-area: trend;
-}
-
 .trending-card {
-    margin: 10px 4em 0px 0px;
+    margin: 10px 4em 10px 0px;
 }
