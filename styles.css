@@ -13,13 +13,14 @@
 
 body {
     display: grid;
+    max-width: 1700px;
     grid-template-areas: 
     "sidebar nav nav nav"
     "sidebar main main announce"
     "sidebar main main announce"
     "sidebar main main trend";
     grid-template-columns: .4fr 1fr 1fr .6fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 25% 25% 25% 25%;
 }
 
 .important {
